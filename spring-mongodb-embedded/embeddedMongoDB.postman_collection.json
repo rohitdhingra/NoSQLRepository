@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "1f416d50-0b01-42ba-8ef9-3a3e29c26446",
+		"name": "embeddedMongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "placeOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":2,\r\n    \"name\":\"Anchal\",\r\n    \"gender\":\"Female\",\r\n    \"products\":[\r\n        {\r\n            \"quantity\":1,\r\n            \"name\":\"AC\",\r\n            \"price\":30000\r\n        },\r\n        {\r\n            \"quantity\":1,\r\n            \"name\":\"Harddisk\",\r\n            \"price\":2000\r\n        }\r\n    ],\r\n    \"address\":{\r\n        \"city\":\"Jalandhar\",\r\n        \"state\":\"Punjab\",\r\n        \"pinCode\":\"144001\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orderService/placeOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderService",
+						"placeOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByName/Rohit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orderService/getUserByName/Rohit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderService",
+						"getUserByName",
+						"Rohit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByAddress/Jalandhar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/orderService/getUserByAddress/Jalandhar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orderService",
+						"getUserByAddress",
+						"Jalandhar"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
