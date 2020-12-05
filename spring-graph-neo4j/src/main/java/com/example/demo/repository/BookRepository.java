@@ -4,7 +4,7 @@ import org.springframework.data.neo4j.repository.Neo4jRepository;
 
 import com.example.demo.node.Book;
 
-public interface BookRepository extends Neo4jRepository<Book, Integer>{
+public interface BookRepository extends Neo4jRepository<Book, String>{
 
 	Book findByName(String name);
 

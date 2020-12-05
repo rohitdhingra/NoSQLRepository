@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Book {	
 	@Id
-	private int id;
+	private String id;
 	private String name;
 	private String author;
 	
